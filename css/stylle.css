@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+  
+}
+
+.menu{
+  display: flex;
+}
+
+.menu li{
+  margin-left: 10px;
+}
+
+.menu li a{
+  display: block;
+  padding: 10px;
+  
+}
+
+img{
+  border-radius: 50%;
+}
+
+header{
+  
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #0a0a0a;
+} 
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: #f3f5f5;
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  background: rgba(131, 94, 26, 0.247);
+  cursor: pointer;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.315);
+}
+
+.card img {
+  width: 40%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%) translateY(50px);
+  transition: all 0.3s;
+}
+
+.card:hover img .card:hover h1,
+.card:hover h3 {
+  transform: traslate(-50%) translateY(0px);
+}
+
+.card h1,
+h3 {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  left: 50%;
+  transform: translate(-50%) translateY(50px);
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.6s;
+}
+
+.card h1 {
+  margin-top: -199px;
+}
+
+.card h3 {
+  margin-top: 20px;
+}
+
